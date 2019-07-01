@@ -1,17 +1,14 @@
-
 h1 {
-    font-size: 16px;
-    text-align: center;
+	font-size: 16px;
+	text-align: center;
 }
-
 h2 {
-    text-align: center;
-    font-size: 10px;
+	text-align: center;
+	font-size: 10px;
 }
-
 .container {
-    background-color: pink;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+	background-color: pink;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
