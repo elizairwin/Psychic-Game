@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta content="ie=edge" http-equiv="X-UA-Compatible">
-	<title>Psychic Game</title>
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Psychic Game</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-	<div id="game">
-		<h1>The Psychic Game!</h1>
-		<p id="instructions">Hi There! Guess What Letter I'm thinking of!</p>
-		<p>Wins:</p>
-		<p>Losses:</p>
-		<p>Guesses Left:</p>
-		<p>Your Guesses So Far:</p>
-	</div>
-	<script src="assets/javascript/game.js">
-	</script>
+    <div class="game">
+        <div class="jumbotron jumbotron-fluid"><i class="fa fa-star" aria-hidden="true"></i>The Psychic Game!<i
+                class="fa fa-star" aria-hidden="true"></i></div>
+        <div class="container text-center cold-md-12">
+            <p id="instructions">Hi There! Guess What Letter I'm thinking of!</p>
+            <p id="wins">Wins: </p>
+            <p id="losses">Losses: </p>
+            <p id="guesses-left">Guesses Left: </p>
+            <p id="letters-guessed">Your Guesses So Far: </p>
+        </div>
+    </div>
+
+    <div class="embed-0">
+    <iframe src="https://open.spotify.com/embed/track/2aSTzyySncsjM8ZmtGCc5r" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    
+    <script src="assets/javascript/game.js"></script>
+    <footer>
+        <p>Copyright © 2019</p>
+    </footer>
 </body>
+
 </html>

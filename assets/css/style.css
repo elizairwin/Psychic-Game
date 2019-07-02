@@ -1,23 +1,60 @@
 body {
 	background-image: url("../images/morocco.png");
-}
-h1 {
-	font-size: 25px;
-	text-align: center;
+
 }
 #instructions {
-	font-size: 16x;
-	text-align: center;
+	font-size: 18px;
+    text-align: center;
+    background-color: rgb(132, 160, 167);
 	padding-top: 1em;
 	padding-bottom: 1em;
 	padding-left: 1em;
-	padding-right: 1em;
+    padding-right: 1em;
+    border-radius: 25px;
+}
+
+.fa {
+    padding: .5em;
+
+}
+#wins {
+    padding-top: 2em;
+
 }
 .game {
+    font-family: Big Caslon, Book Antiqua, Palatino Linotype, Georgia, serif;
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
 .container {
-	background-color: white;
+    background-color: rgb(177, 207, 216);
+    padding-bottom: 3em;
+    padding-top: 3em;
+    border-radius:15px 50px;
+}
+
+footer {
+	overflow: hidden;
+	bottom: 0;
+    height: 1rem;
+	background-color:rgb(228, 218, 218);
+	text-align: center;
+	font-size: 5px;
+	position: fixed;
+	padding-bottom: .9em;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.jumbotron {
+    background-color: rgb(204, 95, 122);
+    color: white;
+    font-size: 25px;
+
+}
+
+iframe {
+    position: fixed;
 }
