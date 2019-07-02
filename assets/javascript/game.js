@@ -3,7 +3,7 @@ var wins = 0;
 var losses = 0;
 var remainingGuesses = 10;
 var lettersGuessed = [];
-var computerGuess;
+var computerGuess = [];
 
 //below is an array of what the computer can guess
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -53,5 +53,6 @@ else if (wins === 10) {
 else {
     alert("Sorry, not a valid guess!")
 }
-var html = "<h1>The Psychic Game!</h1>" + "<p>Hi There! Guess What Letter I'm thinking of!</p>" + "<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>" + "<p>Guesses Left: " + remainingGuesses + "</p>" + "<p>Your Guesses So Far: " + userGuess.join(", ") + "</p>";
+//below is tying back to the HTML
+var html = "<h1>The Psychic Game!</h1>" + "<p>Hi There! Guess What Letter I'm thinking of!</p>" + "<p>Wins: " + Wins + "</p>" + "<p>Losses: " + Losses + "</p>" + "<p>Guesses Left: " + guesses-left + "</p>" + "<p>Your Guesses So Far: " + userGuess.join(", ") + "</p>";
 document.querySelector("#game").innerHTML = html;
