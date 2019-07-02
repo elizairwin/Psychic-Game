@@ -1,36 +1,20 @@
+//variables are all listed below
 var wins = 0;
 var losses = 0;
 var remainingGuesses = 10;
 var lettersGuessed = [];
+var computerGuess = [];
 
-var computerGuess = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z"
-];
+//below is an array of what the computer can guess
+var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+//below is how the computer will pick a letter and how it will be logged
+function generateRandomLetter() {
+    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    computerGuess.push(compGuess);
+    console.log(computerGuess[0]);
+}
+
 
 //if the player guesses the same as the computer, the below happens
 if (userGuess === computerGuess) {
