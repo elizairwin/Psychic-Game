@@ -9,19 +9,25 @@ var computerGuess = [];
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 //below is how the computer will pick a letter and how it will be logged
-function generateRandomLetter() {
+window.onload = function() {
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     computerGuess.push(compGuess);
     console.log(computerGuess[0]);
 }
 
+//below is how the player will pick a leter and how it will be logged
+document.onkeyup = function(event) {
+    var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+    lettersGuessed.push(userGuess);
+    console.log(computerGuess);
+}
 
 //if the player guesses the same as the computer, the below happens
 if (userGuess === computerGuess) {
-    alert("You have ESP!");
+    alert("Way to go. You have ESP!");
     wins++;
-    lettersGuessed.push(userGuess);
-    remainingGuesses--;
+    lettersGuessed.lenth = 0; //resets their guessses since they won
+    remainingGuesses = 10;
 }
 
 //if the player guesses different than the computer, the below happens
