@@ -1,13 +1,15 @@
 //below is my pseudocode
 
-//define variables for the game
-//define computerChoices and have a random choice made
-//have player select letter and update the counters 
+//define all variables for the game
+//define alphabet choices and prompt a randomized pick
+//have player select letter
+//update counters (wins, losses, remaining guesses, letters guessed) during game
 //go through the if/else scenarios
+//push alerts throughout if/else scanarios
 //declare win or loss
 //reset game
 
-//variables are all listed below
+//all variables are listed below
 var wins = 0;
 var losses = 0;
 var remainingGuesses = 10;
@@ -27,23 +29,19 @@ document.onkeyup = function(event) {
     document.getElementById("letters-guessed").innerHTML = lettersGuessed
     document.getElementById("remaining-guesses").innerHTML = remainingGuesses
 
-    console.log(lettersGuessed);
-
 //if the player guesses the same as the computer, the below happens
     if ((userGuess === computerGuess) && (remainingGuesses > 0)) {
         alert("Way to go. You have ESP!");
         wins++;
         lettersGuessed.length = 0;
-        //remainingGuesses = 9;
-        document.getElementById("wins").innerHTML = wins
+        document.getElementById("wins").innerHTML = wins //how wins are logged
         
     }
 //if the player guesses different than the computer, the below happens
     if (userGuess !== computerGuess) {
         alert("Not a match!");
         losses++;
-        //remainingGuesses--;
-        document.getElementById("losses").innerHTML = losses
+        document.getElementById("losses").innerHTML = losses //how losses are logged
     }   
 
 //if the player has 0 chances left, the below happens
@@ -58,16 +56,23 @@ document.onkeyup = function(event) {
     }   
 //if the player wins all 10 times he or she plays, the below happens
     if (wins === 10) {
-        alert("10 times is a charm. You're super psychic!")
+        alert("10 times is a charm. You're super psychic!") //this would be rare :)
   
 }
-//error portion below - i.e. the player doesn't push correct key
-    else {
-        alert("Sorry, not a valid guess!")
-}
 
-}
+//reset function below 
+    else if (remainingGuesses === 0) {
+        location.reload("game");
+    }
+
+//i would like the error portion to be listed below
+//i would like the error portion to include: non-alphabet guesses, repeat guesses
+//will continue to work on this part
+   // else (userGuess !== event.key); {
+        // alert("Sorry, not a valid guess!")
+//}
+
 //below is tying back to the HTML
 var eliza = "Wins: " + wins + "Losses: " + losses + "Guesses Left: " + remainingGuesses + "Your Guesses So Far: " + lettersGuessed;
 
-//add reset function to end of game when guesses = 0
+}
