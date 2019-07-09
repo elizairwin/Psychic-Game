@@ -3,8 +3,9 @@ body {
 }
 #instructions {
 	font-size: 18px;
-	text-align: center;
-	background-color: rgb(132, 160, 167);
+    text-align: center;
+    color: rgb(21, 57, 57);
+	background-color: rgb(121, 214, 208);
 	padding-top: 1em;
 	padding-bottom: 1em;
 	padding-left: 1em;
@@ -23,7 +24,7 @@ body {
 	padding-bottom: 1em;
 }
 .container {
-	background-color: rgb(177, 207, 216);
+	background-color: rgb(80, 146, 150);
 	padding-bottom: 3em;
 	padding-top: 3em;
 	border-radius: 15px 50px;
@@ -44,8 +45,15 @@ footer {
 .jumbotron {
 	background-color: rgb(204, 95, 122);
 	color: white;
-	font-size: 25px;
+	font-size: 30px;
 }
 iframe {
-	position: fixed;
+    position: fixed;
+}
+
+.symbol {
+    color:rgb(227, 146, 160);
+    background-color: white;
+    border-radius: 25px;
+    font-family: Big Caslon, Book Antiqua, Palatino Linotype, Georgia, serif;
 }
