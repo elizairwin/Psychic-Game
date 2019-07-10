@@ -19,11 +19,12 @@ var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.l
 //below is how the user will pick a leter and how it will populate
 document.onkeyup = function (event) {
     userGuess = event.key.toLowerCase();
-    userGuess 
     lettersGuessed.push(userGuess);
     remainingGuesses--;
     document.getElementById("letters-guessed").innerHTML = lettersGuessed
     document.getElementById("remaining-guesses").innerHTML = remainingGuesses
+    //check to see if new key exists in that array
+    //if so then do an alert
 
     //if the player guesses the same as the computer, the below happens
     if ((userGuess === computerGuess) && (remainingGuesses > 0)) {
@@ -56,4 +57,3 @@ document.onkeyup = function (event) {
     var eliza = "Wins: " + wins + "Losses: " + losses + "Guesses Left: " + remainingGuesses + "Your Guesses So Far: " + lettersGuessed;
 }
 
-  //would like to add: error for non-alphabet guesses, error for repeat guesses
