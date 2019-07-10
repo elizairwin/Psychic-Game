@@ -23,8 +23,6 @@ document.onkeyup = function (event) {
     remainingGuesses--;
     document.getElementById("letters-guessed").innerHTML = lettersGuessed
     document.getElementById("remaining-guesses").innerHTML = remainingGuesses
-    //check to see if new key exists in that array
-    //if so then do an alert
 
     //if the player guesses the same as the computer, the below happens
     if ((userGuess === computerGuess) && (remainingGuesses > 0)) {
